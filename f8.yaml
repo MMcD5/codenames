@@ -9,6 +9,11 @@ components:
           httpGet:
             port: 80
             path: /
+        resources:
+          cpu:
+            min: 0.1
+          memory:
+            min: 128
     expose:
       - servicePort: 80
         containerPort: 80
